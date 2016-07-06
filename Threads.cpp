@@ -1,5 +1,4 @@
 
-
 #include <iostream>
 #include <thread>
 #include <string.h>
@@ -16,10 +15,9 @@ string ap_ip[18] = "10.180.40.1";
 void attack(string host_ip){
 	
 	cout << "--------------" << endl;
-	string ping = "ping "+host_ip;
+	string ping = "start ping "+host_ip;
 	system(ping.c_str());
-	cout << "--------------" << endl;
-	
+	cout << "--------------" << endl;	
 }
 
 int main(){
@@ -27,9 +25,15 @@ int main(){
 	thread td[10];
 	int i=0;
 	
-	for(i=0; i<10; i++){
+	for(i=1; i<=10; i++){
 		
-		string ip = "10.180.89.";
+		string ip;
+		
+		if(i<10)
+			ip = "10.180.88.00";
+		else
+			ip = "10.180.88.0";
+		
 		string ip2;
 		
 		ip2 = to_string(i);
