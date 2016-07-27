@@ -1,0 +1,17 @@
+
+
+First:
+
+$who
+
+// You see the system's user
+
+// Imagine the return
+
+Rodrigo
+
+$sudo passwd Rodrigo
+
+// After enter with your new password
+
+// And so, finished.
